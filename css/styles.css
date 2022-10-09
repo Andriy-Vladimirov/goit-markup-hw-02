@@ -1,1 +1,201 @@
+/* primary text color #757575 */
 
+/* secondary text color #212121 */
+
+/* accent color #2196F3 */
+
+/* page primary bg color #FFFFFF */
+
+/* page secondary bg color F5F4FA */
+
+/* footer bg color #2F303A */
+
+:root {
+    /* не забагато змінних? */
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196f3;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --pageprimary-bg-color: #ffffff;
+    --pagesecondary-bg-color: #f5f4fa;
+    --btn-bg-color: #f5f4fa;
+    --footer-bg-color: #2f303a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* Прибрав крапки у елементів усіх списків */
+.list {
+    list-style: none;
+}
+
+/* Прибрав оформелення тексу ссилок за замовчуванням */
+.link {
+    text-decoration: none;
+}
+
+/* СТУДІЯ */
+
+/* header */
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.navmenu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.navmenu-link:hover,
+.navmenu-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* main - banner */
+
+.banner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.banner-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* main - benefits */
+
+.benefits-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+/* .benefits-text не слилузую, так як всі його властивості явно вказані в body */
+/* .benefits-text { 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+} */
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.footer-link {
+    color: var(--footer-link-color);
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    font-style: normal;
+}
+
+.location {
+    color: var(--pageprimary-bg-color);
+}
+
+/* ПОРТФОЛІО */
+
+/* Хедер аналогічний "Студії" */
+
+.project-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+}
+
+.project-desc {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.button-filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    background-color: var(--btn-bg-color);
+    cursor: pointer;
+    border: none;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--pageprimary-bg-color);
+    background-color: var(--accent-color);
+}
+
+/* Футер аналогічний "Студії" */

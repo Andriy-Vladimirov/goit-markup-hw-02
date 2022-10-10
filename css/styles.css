@@ -14,14 +14,14 @@
     /* не забагато змінних? */
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-color: #2196f3;
     --footer-link-color: rgba(255, 255, 255, 0.6);
     --pageprimary-bgc: #ffffff;
-    --secondary-bgc: #F5F4FA;
+    --secondary-bgc: #f5f4fa;
     --pagesecondary-bgc: #f5f4fa;
     --btn-bgc: #f5f4fa;
-    --main-btn-bgc: #188CE8;
-    --header-bgc: #ECECEC;
+    --main-btn-bgc: #188ce8;
+    --header-bgc: #ececec;
     --footer-bgc: #2f303a;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 /* Приховав заголовки, яких немаж на макеті */
-.visually-hidden {      
+.visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -62,10 +62,6 @@ body {
 
 /* header */
 
-.header {
-    background-color: var(--header-bgc);
-}
-
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -75,13 +71,12 @@ body {
 }
 
 /* Стилізував логотип */
-.logo span { 
+.logo span {
     color: var(--accent-color);
 }
 
-.logo:hover,
-.logo:focus {
-    color: var(--pageprimary-bgc)
+.logo-header {
+    color: var(--pageprimary-bgc);
 }
 
 .navmenu-link {
@@ -140,7 +135,7 @@ body {
 
 .banner-button:hover,
 .banner-button:focus {
-    background-color: var(--main-btn-bgc)
+    background-color: var(--main-btn-bgc);
 }
 
 /* main - benefits */
@@ -201,7 +196,8 @@ body {
     font-style: normal;
 }
 
-.location {  /*Стилізував ссиклу геолокації*/
+.location {
+    /*Стилізував ссиклу геолокації*/
     color: var(--pageprimary-bgc);
 }
 
@@ -220,7 +216,7 @@ body {
 .project-desc {
     font-size: 16px;
     line-height: 1.8;
-
+    color: var(--primary-text-color);
 }
 
 .button-filter {
@@ -231,7 +227,7 @@ body {
     text-align: center;
     background-color: var(--btn-bgc);
     cursor: pointer;
-    border: none;   /*Прибрав стандартні рамки*/
+    border: none; /*Прибрав стандартні рамки*/
 }
 
 .button-filter:hover,

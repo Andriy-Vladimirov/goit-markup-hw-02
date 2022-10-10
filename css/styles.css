@@ -14,12 +14,15 @@
     /* не забагато змінних? */
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
-    --accent-color: #2196f3;
+    --accent-color: #2196F3;
     --footer-link-color: rgba(255, 255, 255, 0.6);
-    --pageprimary-bg-color: #ffffff;
-    --pagesecondary-bg-color: #f5f4fa;
-    --btn-bg-color: #f5f4fa;
-    --footer-bg-color: #2f303a;
+    --pageprimary-bgc: #ffffff;
+    --secondary-bgc: #F5F4FA;
+    --pagesecondary-bgc: #f5f4fa;
+    --btn-bgc: #f5f4fa;
+    --main-btn-bgc: #188CE8;
+    --header-bgc: #ECECEC;
+    --footer-bgc: #2f303a;
 }
 
 body {
@@ -41,9 +44,27 @@ body {
     text-decoration: none;
 }
 
+/* Приховав заголовки, яких немаж на макеті */
+.visually-hidden {      
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* СТУДІЯ */
 
 /* header */
+
+.header {
+    background-color: var(--header-bgc);
+}
 
 .logo {
     font-family: 'Raleway';
@@ -53,8 +74,14 @@ body {
     color: #000000;
 }
 
-.logo span {
+/* Стилізував логотип */
+.logo span { 
     color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--pageprimary-bgc)
 }
 
 .navmenu-link {
@@ -76,11 +103,17 @@ body {
 .navmenu-link:hover,
 .navmenu-link:focus,
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.footer-link:hover,
+.footer-link:focus {
     color: var(--accent-color);
 }
 
 /* main - banner */
+
+.banner {
+    background-color: var(--footer-bgc);
+}
 
 .banner-title {
     font-weight: 900;
@@ -89,7 +122,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--pageprimary-bgc);
 }
 
 .banner-button {
@@ -99,10 +132,14 @@ body {
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--pageprimary-bgc);
     background-color: var(--accent-color);
     border: none;
     cursor: pointer;
+}
+
+.banner-button:hover {
+    background-color: var(--main-btn-bgc);
 }
 
 /* main - benefits */
@@ -133,6 +170,9 @@ body {
     color: var(--secondary-text-color);
 }
 
+.team {
+    background-color: var(--secondary-bgc);
+}
 .team-subtitle {
     font-weight: 500;
     font-size: 16px;
@@ -150,7 +190,7 @@ body {
 /* Footer */
 
 .footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--footer-bgc);
 }
 
 .footer-link {
@@ -160,8 +200,8 @@ body {
     font-style: normal;
 }
 
-.location {
-    color: var(--pageprimary-bg-color);
+.location {  /*Стилізував ссиклу геолокації*/
+    color: var(--pageprimary-bgc);
 }
 
 /* ПОРТФОЛІО */
@@ -179,6 +219,7 @@ body {
 .project-desc {
     font-size: 16px;
     line-height: 1.8;
+
 }
 
 .button-filter {
@@ -187,14 +228,14 @@ body {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    background-color: var(--btn-bg-color);
+    background-color: var(--btn-bgc);
     cursor: pointer;
-    border: none;
+    border: none;   /*Прибрав стандартні рамки*/
 }
 
 .button-filter:hover,
 .button-filter:focus {
-    color: var(--pageprimary-bg-color);
+    color: var(--pageprimary-bgc);
     background-color: var(--accent-color);
 }
 

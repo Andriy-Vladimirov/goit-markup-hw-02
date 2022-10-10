@@ -138,9 +138,9 @@ body {
     cursor: pointer;
 }
 
-.banner-button:hover
+.banner-button:hover,
 .banner-button:focus {
-    background-color: var(--main-btn-bgc);
+    background-color: var(--main-btn-bgc)
 }
 
 /* main - benefits */
